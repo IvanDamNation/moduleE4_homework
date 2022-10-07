@@ -5,7 +5,7 @@ function ElectricalDevice(name, power) {
 	this.getSwitch = function(activation) {
 		console.log(this.name + ' works on ' + this.voltage + ' and activated by ' + activation);
 	}
-};
+}
 
 
 function LightningDevice(name, power, lightPower, activation) {
@@ -15,7 +15,7 @@ function LightningDevice(name, power, lightPower, activation) {
 	this.getLamp = function() {
 		console.log(`The light power of ${name} is enough to illuminate ${lightPower/150} sq.m`);
 	}
-};
+}
 
 
 LightningDevice.prototype = new ElectricalDevice();

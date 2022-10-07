@@ -4,11 +4,11 @@ function checkProperty(propString, objectInput) {
 	for (let prop in objectInput) {
 		if (propString == prop) {
 			result = true;
-		};
-	};
+		}
+	}
 
 	return result;
-};
+}
 
 
 /*

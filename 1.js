@@ -2,9 +2,9 @@ const allObjectKeys = function(objectInput) {
 	for (let key in objectInput) {
 		if (objectInput.hasOwnProperty(key)) {
 			console.log(key);
-		};
-	};
-};
+		}
+	}
+}
 
 // For testing purposes
 /*
