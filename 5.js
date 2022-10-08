@@ -6,7 +6,7 @@ class ElectricalDevice {
 	}
 
 	getSwitch(activation) {
-		console.log(this.name + ' works on ' + this.voltage + ' and activated by ' + activation);
+		return this.name + ' works on ' + this.voltage + ' and activated by ' + activation;
 	}
 }
 
@@ -19,7 +19,7 @@ class LightningDevice extends ElectricalDevice {
 	}
 
 	getLamp() {
-		console.log(`The light power of ${name} is enough to illuminate ${this.lightPower/150} sq.m`);
+		return `The light power of ${this.name} is enough to illuminate ${this.lightPower/150} sq.m`;
 	}
 }
 
@@ -28,7 +28,11 @@ const table_lamp = new LightningDevice('table lamp', 600, 90);
 const computer = new ElectricalDevice('computer', 400);
 const conditioner = new ElectricalDevice('air conditioner', 3000);
 
-table_lamp.getSwitch('hand');
-computer.getSwitch('hand');
-conditioner.getSwitch('remote controller');
-table_lamp.getLamp();
+
+// For testing purposes
+/*
+console.log(table_lamp.getSwitch('hand'));
+console.log(computer.getSwitch('hand'));
+console.log(conditioner.getSwitch('remote controller'));
+console.log(table_lamp.getLamp());
+*/
